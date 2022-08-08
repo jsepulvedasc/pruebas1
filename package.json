@@ -1,0 +1,12 @@
+{
+    "name": "pruebas2",
+    "description": "pruebas  de codigo bajo node-red",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flow.json",
+            "credentialsFile": "flow_cred.json"
+        }
+    }
+}
