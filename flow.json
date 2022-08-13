@@ -302,5 +302,72 @@
         "x": 400,
         "y": 400,
         "wires": []
+    },
+    {
+        "id": "253e03dcf626406b",
+        "type": "function",
+        "z": "2410bfcf1932d43b",
+        "name": "function 2",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 100,
+        "wires": [
+            [
+                "94ca627362e57245"
+            ]
+        ]
+    },
+    {
+        "id": "94ca627362e57245",
+        "type": "switch",
+        "z": "2410bfcf1932d43b",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 410,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4d0273236deaa22c",
+        "type": "change",
+        "z": "2410bfcf1932d43b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 220,
+        "y": 220,
+        "wires": [
+            []
+        ]
     }
 ]
