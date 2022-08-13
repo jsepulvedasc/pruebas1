@@ -167,8 +167,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 600,
-        "y": 220,
+        "x": 540,
+        "y": 360,
         "wires": [
             []
         ]
@@ -187,6 +187,69 @@
         "statusType": "auto",
         "x": 260,
         "y": 120,
+        "wires": []
+    },
+    {
+        "id": "9448cbd7a4349a8b",
+        "type": "status",
+        "z": "88c296ff0eb77349",
+        "name": "",
+        "scope": null,
+        "x": 300,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "091b865d66f8b1fb",
+        "type": "link call",
+        "z": "88c296ff0eb77349",
+        "name": "",
+        "links": [],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 250,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a514e610c94c509d",
+        "type": "mqtt in",
+        "z": "2718dabf454ba59c",
+        "name": "",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 120,
+        "wires": [
+            [
+                "827bfd068084f235"
+            ]
+        ]
+    },
+    {
+        "id": "827bfd068084f235",
+        "type": "mqtt out",
+        "z": "2718dabf454ba59c",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "x": 330,
+        "y": 260,
         "wires": []
     }
 ]
